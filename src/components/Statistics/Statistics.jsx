@@ -1,22 +1,21 @@
 import React from 'react';
-import css from './Statistics.module.css';
+import styles from './Statistics.module.css';
 
 export const Statistics = ({ title, stats }) => {
-  console.log(title);
   return (
-    <section className={css.statistics}>
-      {title && <h2 className={css.title}>{title}</h2>}
-      <ul className={css.list}>
+    <section className={styles.statistics}>
+      {title && <h2 className={styles.title}>{title}</h2>}
+      <ul className={styles.list}>
         {stats.map(item => (
           <li
             style={{
               backgroundColor: getRandomColor(),
             }}
             key={item.id}
-            className={css.item}
+            className={styles.item}
           >
-            <span className={css.label}>{item.label}</span>
-            <span className={css.percentage}>{item.percentage}</span>
+            <span className={styles.label}>{item.label}</span>
+            <span className={styles.percentage}>{item.percentage}</span>
           </li>
         ))}
       </ul>

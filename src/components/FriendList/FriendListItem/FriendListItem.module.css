@@ -1,0 +1,14 @@
+.item {
+  
+}
+.online {
+    display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: green;
+}
+.ofline {
+  composes: online;
+  background: red;
+}
