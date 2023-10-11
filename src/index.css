@@ -1,4 +1,7 @@
-@import-normalize; /* bring in normalize.css styles */
+/* bring in normalize.css styles */
+@import-normalize; 
+@import '~sanitize.css';
+
 
 body {
   margin: 0;
@@ -14,7 +17,7 @@ code {
     monospace;
 }
 body {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   line-height: 1.5;
 }
 h1,

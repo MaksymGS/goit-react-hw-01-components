@@ -2,9 +2,11 @@
   width: 280px;
   margin-right: auto;
   margin-left: auto;
-  background: #e0e0e0;
+  background: #f4f4fd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
+  margin-bottom: 16px;
 }
 .description {
   padding-top: 20px;

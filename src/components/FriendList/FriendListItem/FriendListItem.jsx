@@ -2,8 +2,7 @@ import React from 'react';
 import styles from './FriendListItem.module.css';
 
 export const FriendListItem = ({ friends }) => {
-  console.log(friends);
-  return friends.map(({ avatar, id, name, isOnline }) => (
+    return friends.map(({ avatar, id, name, isOnline }) => (
     <li key={id} className={styles.item}>
       {isOnline ? (
         <span className={styles.online}></span>

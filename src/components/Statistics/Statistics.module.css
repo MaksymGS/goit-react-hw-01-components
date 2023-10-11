@@ -3,9 +3,11 @@
   width: 280px;
   margin-right: auto;
   margin-left: auto;
-  background: #e0e0e0;
+  background-color: #f4f4fd;
   border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  margin-bottom: 16px;
 }
 .title {
   text-align: center;
@@ -30,5 +32,5 @@
   display: block;
   text-align: center;
   font-weight: 500;
-;  text-shadow: 1px 1px 1px #ffffff;
+  text-shadow: 1px 1px 1px #ffffff;
 }
