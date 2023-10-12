@@ -1,15 +1,14 @@
 import React from 'react';
 import styles from './FriendListItem.module.css';
 
-export const FriendListItem = ({ friends }) => {
-    return friends.map(({ avatar, id, name, isOnline }) => (
-    <li key={id} className={styles.item}>
+export const FriendListItem = ({ avatar, name, isOnline }) => {
+  return (
+    <li className={styles.item}>
       {isOnline ? (
         <span className={styles.online}></span>
       ) : (
         <span className={styles.ofline}></span>
       )}
-      {/* <span className={styles.status}>{isOnline}</span> */}
       <img
         className={styles.avatar}
         src={avatar}
@@ -18,5 +17,5 @@ export const FriendListItem = ({ friends }) => {
       />
       <p className={styles.name}>{name}</p>
     </li>
-  ));
+  );
 };
